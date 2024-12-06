@@ -5,7 +5,7 @@
     <title>PHP STUDY</title>
 </head>
 <body>
-<section>
+<section class="w-full h -full flex item-center justify-center">
     <div>
         <?php
         $name = $_GET['name'];
@@ -20,11 +20,38 @@
         $birthdate = $_GET["birthdate"];
         $site = "cursoemvideo";
         $$site = "cursoPHP";
+        $a = 3;
+        $b = 2;
+        $maior = $a>$b ? $a : $b;
+        $nickname = null;
+        $ano = $birthdate;
+        $idade = 2024 - $ano;
 
-        echo $n1 + $n2 + $n3 * $n4;
-        echo "<br>" . $site, " e ", $cursoemvideo;
+        echo "$name nasceu no ano $ano e ele deve ter $idade anos de idade";
+        $tipo = ($idade > 18 && $idade < 65) ? "Seu voto é obrigatório" : "Seu voto não é obrigatório";
+        echo "<br> ", $tipo;
+//
+//        if ($idade<16) {
+//            $tipoVoto = "não vota";
+//        } elseif ($idade>=16 && $idade<18 or $idade>=65) {
+//                $tipoVoto = "voto opcional";
+//            } else {
+//                $tipoVoto = "voto obrigatório";
+//        }
+
+        $tipoVoto = ($idade < 16) ? "não vota" : (($idade >= 16 && $idade < 18) || $idade > 65
+            ? "voto opcional" : "voto obrigatorio");
+
+        echo "<br> ", $tipoVoto;
+
+
+//        echo $n1 + $n2 + $n3 * $n4;
+//        echo "<br>" . $site, " e ", $cursoemvideo;
+//        echo "<br>" . $maior, "<br>";
+//        echo "<br>" . ($nickname ? $nickname : $name);
 
         ?>
+        <br>
         <a href="index.html">voltar</a>
     </div>
 </section>
