@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PHP STUDY</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
@@ -16,9 +17,36 @@
                     <label>Digite o ano que voce nasceu</label>
                     <input type="number" name="birthdate" maxlength="4" placeholder="Ano">
                 </div>
+
+                <div>
+                    <h1>Ver tabuada</h1>
+                    <div>
+                        <label>Quantidade de vezes
+                            <input name="vezes">
+                        </label>
+                        <label> Valor
+                            <input name="valor">
+                        </label>
+                    </div>
+                </div>
                 <button type="submit">Verificar</button>
             </form>
         </div>
+        <div>
+            <form method="get" action="study.php">
+                <label>Escolha um número</label>
+                <input name="primo">
+                <button type="submit"> Ver se o número é primo</button>
+            </form>
+        </div>
+        <div>
+            <button> <a href="counter.php">Ver contador</a></button>
+        </div>
+        <div>
+            <button> <a href="foreach.php">Ver foreach</a></button>
+            <button> <a href="array.php">Ver Array</a></button>
+        </div>
+
     </section>
 </body>
 </html>

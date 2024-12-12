@@ -1,0 +1,9 @@
+body{
+    background: gray;
+    padding: 10rem;
+}
+
+section{
+    display: flex;
+    gap: 10rem;
+}
