@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a503f0fe-be80-4d9a-a344-bff440880c1f" name="todo Mapping">
+      <data-sources db="e1383a9a-68b5-4934-b54f-11ced8201a2f" ddl="ebd84f04-b6e1-4fda-a9b1-f18dca243f12" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
